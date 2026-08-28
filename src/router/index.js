@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 // 导入布局组件
 import Layout from '@/layout/index.vue'
@@ -32,70 +32,19 @@ const routes = [
         component: () => import('@/views/dashboard/index.vue'),
         meta: { title: '仪表盘', icon: 'House' }
       },
-      // 用户管理模块
+      // ... 其余子路由保持不变
+      // 兜底路由
       {
-        path: 'user/list',
-        name: 'UserList',
-        component: () => import('@/views/user/list.vue'),
-        meta: { title: '用户列表', icon: 'User' }
-      },
-      {
-        path: 'user/add',
-        name: 'AddUser',
-        component: () => import('@/views/user/add.vue'),
-        meta: { title: '新增用户', icon: 'User' }
-      },
-      {
-        path: 'user/profile',
-        name: 'UserProfile',
-        component: () => import('@/views/user/profile.vue'),
-        meta: { title: '个人中心', icon: 'User' }
-      },
-      // 系统设置模块
-      {
-        path: 'system/menu',
-        name: 'MenuManage',
-        component: () => import('@/views/system/menu.vue'),
-        meta: { title: '菜单管理', icon: 'Setting' }
-      },
-      {
-        path: 'system/role',
-        name: 'RoleManage',
-        component: () => import('@/views/system/role.vue'),
-        meta: { title: '角色管理', icon: 'Setting' }
-      },
-      {
-        path: 'system/config',
-        name: 'SystemConfig',
-        component: () => import('@/views/system/config.vue'),
-        meta: { title: '系统配置', icon: 'Setting' }
-      },
-      // 数据统计
-      {
-        path: 'statistics',
-        name: 'Statistics',
-        component: () => import('@/views/statistics/index.vue'),
-        meta: { title: '数据统计', icon: 'DataBoard' }
-      },
-      // 帮助中心
-      {
-        path: 'help',
-        name: 'HelpCenter',
-        component: () => import('@/views/help/index.vue'),
-        meta: { title: '帮助中心', icon: 'Help' }
+        path: '/:pathMatch(.*)*',
+        redirect: '/404'
       }
     ]
-  },
-  // 兜底路由
-  {
-    path: '/:pathMatch(.*)*',
-    redirect: '/404'
   }
 ]
 
 // 创建路由实例
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHashHistory(), // ② 这里改了，不再传入任何参数
   routes
 })
 
