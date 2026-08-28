@@ -1,15 +1,22 @@
 <template>
   <div class="help-center-container">
     <div class="doc-container">
-      <iframe :src="`/docs/index.html`" frameborder="0" class="doc-iframe"></iframe>
+      <iframe :src="docUrl" frameborder="0" class="doc-iframe"></iframe>
     </div>
   </div>
 </template>
 
-<script setup>
-// 如果后续需要动态路径，可引入 useRoute
+<script>
+export default {
+  name: 'DocView',
+  computed: {
+    docUrl () {
+      // BASE_URL 在 Vue CLI 中自动注入，值为 publicPath
+      return process.env.BASE_URL + 'docs/index.html'
+    }
+  }
+}
 </script>
-
 <style scoped>
 /* 1. 外层容器填满父级（假设父级是 flex 列，且高度为 100vh） */
 .help-center-container {
