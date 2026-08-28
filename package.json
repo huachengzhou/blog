@@ -13,6 +13,8 @@
     "@element-plus/icons-vue": "^2.3.2",
     "core-js": "^3.6.5",
     "element-plus": "^2.3.12",
+    "github-markdown-css": "^5.9.0",
+    "marked": "^4.3.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"

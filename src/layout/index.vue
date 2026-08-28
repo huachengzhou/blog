@@ -15,6 +15,7 @@
           <el-icon><House /></el-icon>
           <template #title>仪表盘</template>
         </el-menu-item>
+
         <el-sub-menu index="user">
           <template #title>
             <el-icon><User /></el-icon>
@@ -24,6 +25,7 @@
           <el-menu-item index="/user/add">新增用户</el-menu-item>
           <el-menu-item index="/user/profile">个人中心</el-menu-item>
         </el-sub-menu>
+
         <el-sub-menu index="system">
           <template #title>
             <el-icon><Setting /></el-icon>
@@ -33,18 +35,30 @@
           <el-menu-item index="/system/role">角色管理</el-menu-item>
           <el-menu-item index="/system/config">系统配置</el-menu-item>
         </el-sub-menu>
+
         <el-menu-item index="/statistics">
           <el-icon><DataBoard /></el-icon>
           <template #title>数据统计</template>
         </el-menu-item>
+
         <el-menu-item index="/docOldPage">
           <el-icon><Star /></el-icon>
           <template #title>旧文档</template>
         </el-menu-item>
+
+        <el-sub-menu index="markdown">
+          <template #title>
+            <el-icon><Setting /></el-icon>
+            <span>markdown</span>
+          </template>
+          <el-menu-item index="markdown/mysql/index">mysql</el-menu-item>
+        </el-sub-menu>
+
         <el-menu-item index="/help">
           <el-icon><Help /></el-icon>
           <template #title>帮助中心</template>
         </el-menu-item>
+
       </el-menu>
     </el-aside>
 

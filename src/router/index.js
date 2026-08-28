@@ -90,6 +90,13 @@ const routes = [
         name: 'HelpCenter',
         component: () => import('@/views/help/index.vue'),
         meta: { title: '帮助中心', icon: 'Help' }
+      },
+      // 用户管理模块
+      {
+        path: 'markdown/mysql/index',
+        name: 'markdown_mysql_index',
+        component: () => import('@/views/markdown/mysql/index.vue'),
+        meta: { title: 'markdown mysql ', icon: 'User' }
       }
     ]
   },
