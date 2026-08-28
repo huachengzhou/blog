@@ -37,6 +37,10 @@
           <el-icon><DataBoard /></el-icon>
           <template #title>数据统计</template>
         </el-menu-item>
+        <el-menu-item index="/docOldPage">
+          <el-icon><Help /></el-icon>
+          <template #title>旧文档</template>
+        </el-menu-item>
         <el-menu-item index="/help">
           <el-icon><Help /></el-icon>
           <template #title>帮助中心</template>

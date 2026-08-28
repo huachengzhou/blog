@@ -77,6 +77,13 @@ const routes = [
         component: () => import('@/views/statistics/index.vue'),
         meta: { title: '数据统计', icon: 'DataBoard' }
       },
+      // 旧文档
+      {
+        path: 'docOldPage',
+        name: 'DocOldPage',
+        component: () => import('@/views/docOldPage/index.vue'),
+        meta: { title: '旧文档', icon: 'Help' }
+      },
       // 帮助中心
       {
         path: 'help',
