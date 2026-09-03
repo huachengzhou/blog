@@ -51,7 +51,7 @@
             <el-icon><Setting /></el-icon>
             <span>markdown</span>
           </template>
-          <el-menu-item index="markdown/mysql/index">mysql</el-menu-item>
+          <el-menu-item index="markdown/mysql/index">mysql查询</el-menu-item>
         </el-sub-menu>
 
         <el-menu-item index="/help">
