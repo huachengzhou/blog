@@ -66,10 +66,10 @@ import 'github-markdown-css/github-markdown.css'
 // 菜单数据：标题 + 文件路径
 const mysqlMarkdown = [
 
-  { title: '什么叫魅力', input: '/markdown/自我提升/iQCS36RGjy/fdhcmhstpw.md' },
-  { title: '我无所畏惧，因为', input: '/markdown/自我提升/iQCS36RGjy/j74dbsrtzw.md' },
-  { title: '从此你不再受伤害', input: '/markdown/自我提升/iQCS36RGjy/tbwyjex4gc.md' },
-  { title: '关于爱情令人不解的一切', input: '/markdown/自我提升/iQCS36RGjy/x8benctsak.md' },
+  { title: '什么叫魅力', input: '/markdown/自我提升/iqcs36rgjy/fdhcmhstpw.md' },
+  { title: '我无所畏惧，因为', input: '/markdown/自我提升/iqcs36rgjy/j74dbsrtzw.md' },
+  { title: '从此你不再受伤害', input: '/markdown/自我提升/iqcs36rgjy/tbwyjex4gc.md' },
+  { title: '关于爱情令人不解的一切', input: '/markdown/自我提升/iqcs36rgjy/x8benctsak.md' },
 
   { title: '发声 具体训练方法', input: '/markdown/自我提升/my_self/2Bm8TrpQZx.md' },
   { title: '使自己成熟稳重', input: '/markdown/自我提升/my_self/6NGDcHa8bK.md' },
